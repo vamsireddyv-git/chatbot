@@ -5,7 +5,7 @@ import cors from 'cors';
 dotenv.config();
 const app = express();
 app.use(cors({
-    origin : "http://localhost:5174",
+    origin : ["http://localhost:5174",process.env.FRONTEND_URL],
     methods : ["GET","POST"]
 }))
 app.use(express.json());
