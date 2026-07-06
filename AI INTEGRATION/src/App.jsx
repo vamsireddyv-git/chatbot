@@ -4,6 +4,7 @@ import mainLogo from './assets/gemini.png'
 import axios from 'axios'
 import ReactMarkDown from 'react-markdown';
 import './App.css'
+const API_URL = import.meta.env.VITE_API_URL;
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
     }
     setIsLoading(true);
     try{
-      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/ai/generate`,{message : inputText});
+      const response = await axios.post(`${API_URL}/api/ai/generate`,{message : inputText});
       const updatedMessages = [
       ...messages, 
       { userMessage: inputText, status: "user" }, 
