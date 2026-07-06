@@ -18,7 +18,7 @@ function App() {
     }
     setIsLoading(true);
     try{
-      const response = await axios.post(import.meta.env.VITE_API_URL + "/api/ai/generate",{message : inputText});
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/ai/generate`,{message : inputText});
       const updatedMessages = [
       ...messages, 
       { userMessage: inputText, status: "user" }, 
