@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+.message{
+    white-space: normal;
+    line-height:1.5;
+}
+
+.message p{
+    margin-bottom: 12px;
+
+}
+
+.message h3{
+    margin-top: 16px;
+    margin-bottom: 8px;
+
+}
+
+.message ul,
+.message ol{
+    padding-left: 24px;
+    margin-bottom: 12px;
+}
