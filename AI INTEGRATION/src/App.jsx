@@ -73,7 +73,7 @@ function App() {
       onSubmit={handleSendMessage} 
       className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center w-[90%] max-w-xl bg-white rounded-full border border-gray-400 shadow-md px-4 py-2 z-50"
     >
-      <textarea onChange={(e) => setInputText(e.target.value)} onKeyDown={handleSendMessage}
+      <textarea onChange={(e) => setInputText(e.target.value)}
         value={inputText}
         placeholder="Ask Gemini" 
         className="flex-1 h-10 resize-none outline-none text-gray-700 pr-12 pt-2 bg-transparent"
